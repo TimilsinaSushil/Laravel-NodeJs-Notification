@@ -35,4 +35,4 @@ RabbitMQ UI: http://localhost:15672
 
 ## API Documentation
 
-Refer to this postman link for apidocumentation: [text](https://www.postman.com/moviementor/globalyhub/request/7iol3lx/publish-notifications)
+Refer to this postman link for apidocumentation: https://www.postman.com/moviementor/globalyhub/request/7iol3lx/publish-notifications
