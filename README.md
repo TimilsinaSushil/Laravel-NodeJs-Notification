@@ -3,29 +3,15 @@
 This project demonstrates a **notification system** using a **Laravel API** and a **Node.js microservice (Fastify + TypeScript)**. The services communicate through **RabbitMQ**, using **Docker Compose** for local orchestration.
 
 ---
-
-## Configure Environment Variables
-
-Initally configure .env file in main directory for docker compose. Here is the sample env.
-
+## Copy env files and configure your own values if  needed.
 ```
-RABBITMQ_USER=guest
-
-RABBITMQ_PASSWORD=guest
-
-DB_DATABASE=laravelapi
-
-DB_USERNAME=admin
-
-DB_PASSWORD=secret
-
+cp .env.sample .env
+cp LaravelAPI/.env.example LaravelAPI/.env
+cp NodeJsMicroService/.env.sample NodeJsMicroService/.env
 ```
 
-Based on that the value set above configure the following.
+Environment for LaravelAPI and NodeJsMicroService should be based on the value of .env file of main folder. The sample values are already provided otherwise you can change your own values.
 
-LaravelAPI/.env
-
-NodeJsMicroservice/.env
 
 ---
 

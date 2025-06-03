@@ -1,14 +1,25 @@
 FROM php:8.2-fpm
 
-# Install dependencies
-RUN docker-php-ext-install pdo pdo_mysql
+RUN apt-get update && apt-get install -y \
+    bzip2 \
+    curl \
+    git \
+    libonig-dev \
+    libpng-dev \
+    libxml2-dev \
+    unzip \
+    zip \
+    && rm -rf /var/lib/apt/lists/* \
+    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd sockets
 
-# Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www
 
+# ✅ Copy everything 
 COPY . .
 
+# ✅ Now install dependencies
+RUN composer install --no-dev --optimize-autoloader
 
 CMD ["php-fpm"]
