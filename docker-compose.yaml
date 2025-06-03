@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  # Laravel PHP-FPM App
+  # Laravel App
   laravel:
     build:
       context: ./LaravelAPI
@@ -36,6 +36,9 @@ services:
     ports:
       - "3000:3000"
     restart: unless-stopped
+    env_file: ./NodeJSMicroservice/.env
+    volumes:
+    - ./NodeJSMicroservice:/usr/src/app
     depends_on:
       - mysql
       - redis
