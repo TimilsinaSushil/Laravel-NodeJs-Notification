@@ -9,14 +9,19 @@ This project demonstrates a **notification system** using a **Laravel API** and 
 Initally configure .env file in main directory for docker compose. Here is the sample env.
 
 RABBITMQ_USER=guest
+
 RABBITMQ_PASSWORD=guest
+
 DB_DATABASE=laravelapi
+
 DB_USERNAME=admin
+
 DB_PASSWORD=secret
 
 Based on that the value set above configure the following.
 
 LaravelAPI/.env
+
 NodeJsMicroservice/.env
 
 
