@@ -8,6 +8,7 @@ This project demonstrates a **notification system** using a **Laravel API** and 
 
 Initally configure .env file in main directory for docker compose. Here is the sample env.
 
+```
 RABBITMQ_USER=guest
 
 RABBITMQ_PASSWORD=guest
@@ -18,6 +19,8 @@ DB_USERNAME=admin
 
 DB_PASSWORD=secret
 
+```
+
 Based on that the value set above configure the following.
 
 LaravelAPI/.env
@@ -27,7 +30,9 @@ NodeJsMicroservice/.env
 
 ## Run the System
 
+```
 docker compose up -d --build
+```
 
 ## Services and Ports
 
@@ -40,4 +45,6 @@ RabbitMQ UI: http://localhost:15672
 
 ## API Documentation
 
-Refer to this postman link for apidocumentation: https://www.postman.com/moviementor/globalyhub/request/7iol3lx/publish-notifications
+Refer to this postman link for apidocumentation: 
+
+https://www.postman.com/moviementor/globalyhub/documentation/1gflzk1/laravel-nodejs-notification
