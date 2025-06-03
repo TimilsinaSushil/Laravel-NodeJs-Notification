@@ -5,9 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NotificationController;
 
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+// API Route for Notifications
 
-
-Route::post('/notifications', [NotificationController::class, 'store']);
+Route::post('/notifications', [NotificationController::class, 'store'])
+    ->middleware('throttle:notifications');
