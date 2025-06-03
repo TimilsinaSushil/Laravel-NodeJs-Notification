@@ -39,7 +39,7 @@ docker compose up -d --build
 ---
 ## Services and Ports
 
-Laravel API: http://localhost:8000
+Laravel API: http://localhost:8080
 
 Node API (Fastify): http://localhost:3000
 
@@ -49,6 +49,6 @@ RabbitMQ UI: http://localhost:15672
 ---
 ## API Documentation
 
-Refer to this postman link for apidocumentation: 
+Refer to this postman link for api documentation: 
 
 https://www.postman.com/moviementor/globalyhub/documentation/1gflzk1/laravel-nodejs-notification
