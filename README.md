@@ -27,6 +27,8 @@ LaravelAPI/.env
 
 NodeJsMicroservice/.env
 
+---
+
 
 ## Run the System
 
@@ -34,6 +36,7 @@ NodeJsMicroservice/.env
 docker compose up -d --build
 ```
 
+---
 ## Services and Ports
 
 Laravel API: http://localhost:8000
@@ -43,6 +46,7 @@ Node API (Fastify): http://localhost:3000
 RabbitMQ UI: http://localhost:15672 
 
 
+---
 ## API Documentation
 
 Refer to this postman link for apidocumentation: 
