@@ -4,16 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^22.15.28",
+    "@fastify/mysql": "^5.0.2",
+    "@fastify/type-provider-typebox": "^5.1.0",
     "amqplib": "^0.10.8",
+    "dotenv": "^16.5.0",
     "fastify": "^5.3.3",
-    "nodemon": "^3.1.10",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/node": "^22.15.29",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
