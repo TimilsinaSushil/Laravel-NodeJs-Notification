@@ -10,7 +10,6 @@ services:
     restart: unless-stopped
     volumes:
       - ./LaravelAPI:/var/www
-      - ./volumes/laravel_vendor:/var/www/vendor
     depends_on:
       - mysql
       - rabbitmq
@@ -39,7 +38,6 @@ services:
     env_file: ./NodeJSMicroservice/.env
     volumes:
     - ./NodeJSMicroservice:/usr/src/app
-    - ./volumes/node_modules:/usr/src/app/node_modules
     depends_on:
       - mysql
       - rabbitmq

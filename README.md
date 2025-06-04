@@ -16,7 +16,11 @@ Environment for LaravelAPI and NodeJsMicroService should be based on the value o
 ---
 ## Install dependencies for local development
 ```
-cd Laravel
+cd LaravelAPI
+composer install
+cd..
+cd NodeJsMicroService
+npm install
 ```
 
 
