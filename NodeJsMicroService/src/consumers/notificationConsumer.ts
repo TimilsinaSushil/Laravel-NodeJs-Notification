@@ -20,7 +20,7 @@ export async function startConsumer() {
             const content = msg.content.toString();
             const parsed = JSON.parse(content);
 
-            // 🔥 Read retries from message headers 
+            // Read retries from message headers 
             let retries = parseInt(msg.properties?.headers?.['x-retries'] ?? '0', 10);
 
             try {

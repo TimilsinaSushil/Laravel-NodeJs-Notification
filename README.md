@@ -1,6 +1,6 @@
 # Laravel + Node.js Notification System
 
-This project demonstrates a **notification system** using a **Laravel API** and a **Node.js microservice (Fastify + TypeScript)**. The services communicate through **RabbitMQ**, using **Docker Compose** for local orchestration.
+This project demonstrates a **notification system** using a **Laravel API** and a **Node.js microservice (Fastify + TypeScript)**. The services communicate through **RabbitMQ**, using **Docker Compose** for local development.
 
 ---
 ## Copy env files and configure your own values if  needed.
