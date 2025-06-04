@@ -16,10 +16,10 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www
 
-# ✅ Copy everything 
+# Copy everything 
 COPY . .
 
-# ✅ Now install dependencies
-RUN composer install --no-dev --optimize-autoloader
+# Install dependencies
+RUN composer install 
 
 CMD ["php-fpm"]
